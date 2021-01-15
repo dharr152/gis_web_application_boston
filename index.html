@@ -1,0 +1,96 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Binary by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>WebMap by David Harris</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=fixed, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/light/main.css"/>
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header id="header">
+			<a class="logo"><strong>City of Boston Building Explorer</strong> Web Application by David Harris, GIS619 Summer 2020</a>
+			<nav>
+				<a href="#menu">Additional Resources</a>
+			</nav>
+		</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li id="map1_source"><a>Retrofit links</a>
+						<ul id='retrolinks'>
+							<li><a href='https://bostonrealestatetimes.com/to-achieve-carbon-neutrality-boston-will-need-to-retrofit-nearly-86000-buildings-by-2050/'>https://bostonrealestatetimes.com</a></li>
+							<li><a href='https://bostoncan.org/category/retrofits/'>https://bostoncan.org/</a></li>
+							<li><a href='https://www.boston.gov/sites/default/files/embed/file/2017-01/retrofitting_report_10.7.2016.pdf'>https://www.boston.gov</a></li>
+						</ul></li>
+					<li id="map2_source"><a>Map sources</a>
+						<ul id='maplinks'>
+							<li><a href='https://data.boston.gov/dataset/boston-buildings-inventory'>Boston Parcel RetroFit Data</a></li>
+							<li><a href='https://www.arcgis.com/home/item.html?id=c423eda7a64b49c98a9ebdf5a6b7e135'>Boston Buildings</a></li>
+							<li><a href='https://gisanddata.maps.arcgis.com/home/item.html?id=c0afb1ddcdb947d599c079387ca5d8d4'>3D .SLPK Developed for this project</a></li>
+					</ul></li>
+					<li id="map3_source"><a>Template link</a>
+						<ul id='templatelink'>
+							<li><a href='https://templated.co/binary'>CSS/HTML/JS template used in this project</a></li>
+						</ul></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			
+			<section id="block1" class="banner">
+				<h3 class='top'>The City of Boston and Carbon Neutrality</h3>
+				<p class="info">Boston is well known to be one of the oldest cities in the United States. As one of the founding urban centers in this country, many of its buildings are well over one hundred years old.  According to <a href="https://bostonrealestatetimes.com/to-achieve-carbon-neutrality-boston-will-need-to-retrofit-nearly-86000-buildings-by-2050/">
+				the Boston Real Estate times</a>, the city of Boston is going to need to retrofit nearly 86,000 buildings by 2050 if it hopes to achieve carbon neutraility by that time.  Retrofitting buildings can be expensive, and to meet this goal, local administrative bodies will need to implement incentives for homeowners to retrofit their homes and lower their carbon footprint.  The mapping application below is meant to be a resource in determining which areas may benefit from targeted incentives more than others by showing the oldest buildings as well as those that have recieved the highest number of retrofitting recommendations.</href></p>
+			</section>
+
+			<!--post-->
+			<article id="three" class="post style1">
+				<div class="map" id="viewDiv3"></div>
+				<div id="infoDiv" class="esri-widget">
+					<div id="drop-downs">
+						<h4><strong>Pan to Area:</strong></h4>
+						<select id="zip-code" class="esri-widget"></select>
+					  </div>
+					<h4><strong>Year Built:</strong></h4>
+					<div id="year" class="slider"></div>
+				</div>
+				<div class="content">
+					<div class="inner">
+							<h4 class='align-left'>Background on the Data:</h4>
+						<p class='align-left'><ul><li><h5 class='align-left'>Retrofitting Recommendations:</h5><p class='align-left'>The data on retrofitting recommendations is a combinations of the number of recommended heat pump retrofit strategies and the number of envelope retrofit strategies recommended. No single parcel could have more then 7 total recommendations, and this data is symbolized from grey to maroon in four classes (0-1, 2-3, 4-5, and 6-7 per parcel), with the darkest properties indicating the most recommended retrofittings.</p></li>
+						<li><h5 class='align-left'>Energy per year in kBTU:</h5><p class='align-left'>For some buildings, this map displays kBTU, or kilo-British thermal unit.  While this is incomplete data, it shows how much energy a property consumes in a given year.  This is symbolized in yellow, and is most visible on the largest buildings in the city.</p></li></ul></p>
+					</div>
+			<div id=divButton>
+				<a class="button alt" id = "widgetButton">Hide Widget Pane</a>
+			</div>
+				</div>
+			</article>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<p class="info" >David Harris, Msc, GIS Candidate, expected graduation Spring 2021</p>
+				<div class="copyright">
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://js.arcgis.com/4.16/"></script>
+			<script src = 'assets/js/map.js'></script>
+
+	</body>
+</html>

@@ -1,0 +1,8 @@
+html,
+    body,
+    #viewDiv1 {
+      margin: 50px;
+      height: 500px;
+      width: 80%;
+      position: absolute;
+    }
