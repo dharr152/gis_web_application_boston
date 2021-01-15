@@ -3,4 +3,4 @@ This repository holds a web mapping application I created as part of a GIS web a
 
 The app was designed using the ArcGIS Javascript API, and data was pulled from data.boston.gov.  background on data development, and the published ArcGIS online layer consumed in this application can be found here: https://gisanddata.maps.arcgis.com/home/item.html?id=c0afb1ddcdb947d599c079387ca5d8d4
 
-Some of the CSS and HTML was derived from a template (https://templated.co/binary), though most of the final product was edited down from this resource.
+Some of the CSS and HTML was derived from a template (a zip of this resource is included in this repo), though most of the final product was edited down from this resource.
