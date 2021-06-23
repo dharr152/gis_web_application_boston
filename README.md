@@ -1,6 +1,8 @@
 # gis_web_application_boston
 This repository holds a web mapping application I created as part of a GIS web app development course at JHU. 
 
+The final product may be viewed here: https://dharr152.github.io/gis_web_application_boston/
+
 The app was designed using the ArcGIS Javascript API, and data was pulled from data.boston.gov.  Background on data development, and the published ArcGIS online layer consumed in this application can be found here: https://gisanddata.maps.arcgis.com/home/item.html?id=c0afb1ddcdb947d599c079387ca5d8d4.
 
 The primary JS developed as part of this project can be found in assets/js/map.js.
